@@ -3,7 +3,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>tak2flac</RootNamespace>
     <AssemblyName>tak2flac</AssemblyName>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -30,16 +30,19 @@
   </PropertyGroup> 
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <Reference Include="System"/>   
-    <Reference Include="Microsoft.CSharp"/>
-    <Reference Include="System.Data"/>
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />   
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="app.config"/>
-    <None Include="packages.config"/>
-    <Compile Remove="Properties\AssemblyInfo.cs"/>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <Compile Remove="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="9.0.7" />
   </ItemGroup>
 </Project>
