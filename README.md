@@ -1,3 +1,8 @@
+## Quick Change Log:
+- Upgrade to .Net 9. 
+- Replace NewtonSoftJson to System.Text.Json. 
+- Don't need to set environment variable anymore, just put ffprobe.exe and ffmpeg.exe in the same folder with tak2flac.exe.
+
 [看不懂英文嗎 來這裡!](https://github.com/appleneko2001/tak2flac/blob/master/README.zh-Hant.md)
 
 # tak2flac [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
